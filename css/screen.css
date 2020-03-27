@@ -15,7 +15,7 @@
 html {
     font-size: 16px;
     line-height: 1.5;
-    font-family: Helvetica, arial, sans-serif;
+    font-family: HK Grotesk Web;
     color: #111;
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
@@ -27,6 +27,30 @@ html {
 *:after {
     box-sizing: inherit;
 }
+
+@font-face{
+    font-family: "HK Grotesk Web";
+    font-weight: 200;
+    src: url(../fonts/hkgrotesk-light-webfont.woff2)format("woff2");
+    src: url(../fonts/hkgrotesk-light-webfont.woff)format("woff");
+
+}
+
+@font-face{
+    font-family: "HK Grotesk Web";
+    font-weight: 400;
+    src: url(../fonts/hkgrotesk-medium-webfont.woff2)format("woff2");
+    src: url(../fonts/hkgrotesk-medium-webfont.woff)format("woff");
+
+}
+
+@font-face{
+    font-family: "HK Grotesk Web";
+    font-weight: 600;
+    src: url(../fonts/hkgrotesk-regular-webfont.woff2)format("woff2");
+    src: url(../fonts/hkgrotesk-regular-webfont.woff) format("woff");
+}
+
 
 /*
  * Remove text-shadow in selection highlight:
@@ -65,17 +89,20 @@ img {
 h1 {
     font-size: 36px;
     line-height: 48px;
+    font-weight: 200;
     margin: 0 0 24px;
 }
 
 h2 {
     font-size: 32px;
     line-height: 40px;
+    font-weight: 200;
     margin: 0 0 24px;
 }
 
 h3 {
     font-size: 26px;
+    font-weight: 200;
     line-height: 32px;
     margin: 0 0 24px;
 }
@@ -173,6 +200,12 @@ a:focus {
 }
 
 @media (min-width: 768px) {
+
+    html{
+        font-size: 20px;
+        line-height: 1.6;
+    }
+
     .o-row {
         padding-left: 48px;
         padding-right: 48px;
@@ -194,7 +227,7 @@ a:focus {
     margin-left: auto;
     margin-right: auto;
     width: 100%;
-    max-width: 90em; /* 90 * 16px = 1440px */
+    max-width: 70.5em; /* 90 * 16px = 1440px */
 }
 
 /*
