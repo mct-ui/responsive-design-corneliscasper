@@ -249,8 +249,16 @@ a:focus {
     padding: 48px 24px 24px;
 }
 
+.o-section{
+    margin-top: 24px;
+}
+
 @media (min-width: 768px) {
 
+    .o-section--lg+  .o-section--lg,
+    .o-section--xl+.o-section--xl{
+        margin-top: 48px;
+    }
 
     html{
         font-size: 20px;
@@ -274,6 +282,11 @@ a:focus {
         padding-right: 48px;
     }
 
+    .o-row--md{
+        padding-top: 48px;
+        padding-bottom: 24px;
+    }
+
     .o-row--lg {
         padding-top: 72px;
         padding-bottom: 48px;
@@ -291,6 +304,12 @@ a:focus {
 
     .c-header__nav{
         display: block;
+    }
+}
+
+@media (min-width:1200px){
+    .o-section--xl+.o-section--xl{
+        margin-top: 72px;
     }
 }
 /*
@@ -328,11 +347,12 @@ a:focus {
 /* gutter modifiers, these affect o-layout__item too */
 
 .o-layout--gutter {
-    margin: 0 -12px;
+    margin-left: 20px;
 }
 
 .o-layout--gutter > .o-layout__item {
     padding: 0 12px;
+    
 }
 
 .o-layout--gutter-sm {
@@ -340,7 +360,7 @@ a:focus {
 }
 
 .o-layout--gutter-sm > .o-layout__item {
-    padding: 0 6px;
+    padding: 0 px;
 }
 
 .o-layout--gutter-lg {
@@ -436,7 +456,9 @@ a:focus {
     ---
     Utility classes to put specific max widths onto elements
 */
-
+.u-pt-clear{
+    padding-top: 0px !important;
+}
 .u-max-width-xs {
     max-width: 18em !important;
 }
