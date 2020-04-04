@@ -270,6 +270,11 @@ a:focus {
     display: flow-root;
 }
 
+.o-row--gradient{
+    background: white; /* Fallback! */
+    background: hsla(226, 100%, 49%, 0.3);
+    color: #Fff;
+}
 .o-row--neutral-x-light{
     background-color: #F7F7F7;
 }
@@ -322,7 +327,21 @@ a:focus {
     transition-timing-function: ease-in;
 }
 
-.c-link-cta::after{
+.c-link-cta--inverse,
+.c-link-cta--inverse:visited,
+.c-link-cta--inverse:active {
+    color: #fff;
+}
+
+.c-link-cta--inverse::after{
+    color: #Fff
+}
+
+.c-link-cta--inverse::before{
+    color: #fff;
+}
+
+.c-link-cta:hover::after {
     transform: scaleX(1);
     background-color: #3E3EA8;
 }
