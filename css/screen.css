@@ -291,6 +291,14 @@ a:focus {
 
 }
 
+.o-list-end{
+    list-style: none;
+}
+
+.o-list-item{
+    padding-bottom:8px;
+    padding-top:4px;
+}
 .c-nav {
     font-size: 18px;
     line-height: 24px;
@@ -451,9 +459,9 @@ a:focus {
 }
 
 @media (min-width:992px){
-    .c-header,.c-header__logo{
+    .c-header,.c-header__logo,.c-header__nav{
         display: flex;
-        flex-wrap: no-wrap;
+        flex-wrap: wrap;
         justify-content: space-between;
         
         
